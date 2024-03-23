@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumen Semana 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Resumen semana 2</h1>
+    <p>Esto es un resumen de lo que vimos sobre CSS.</p>
+
+    <h2>Selectores</h2>
+
+    <p>Existen principalmente tres tipos de selectores:</p>
+
+    <ol>
+        <li>Selectores directos</li>
+        <li>Selectores de id</li>
+        <li>Selectores de clase</li>
+    </ol>
+
+    <h3>Selectores directos</h3>
+
+    <p>
+        Los selectores directos se utilizan para modificar a todos los elementos del HTML,
+        siguiendo la jerarquía del documento. Estos se utilizan seleccionando el elemento que
+        se quiere modificar. Por ejemplo, para modificar a todos los elementos 
+        <code>&lt;p&gt;</code> con texto de color rojo, podemos escribir:
+    </p>
+    
+    <pre><code>p {<br>&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>}</code></pre>
+
+    <p>
+        Otro ejemplo son algunos de los elementos de este mismo documento. ¡Revisa el código!
+    </p>
+
+    <h3>Selectores de id</h3>
+
+    <p>
+        Estos selectores afectan a un único elemento en el documento, aquel son el que concuerde
+        el atributo <code>id</code>.
+    </p>
+
+    <p id="pEstiloso">
+        Por ejemplo, este párrafo en particular tiene <code>id=&quot;pEstiloso&quot;</code>
+        y puede ser modificado con el siguiente selector, anteponiendo <code>#</code> al 
+        <code>id</code> del elemento:
+    </p>
+    <pre><code>#pEstiloso {<br>    color: blue;<br>}</code></pre>
+
+    <h3>Selector de clase</h3>
+
+    <p class="clasep">
+        Un punto medio entre los selectores directos, que modifican todos los elementos, y
+        los de id, que modifican a sólo uno, son los selectores de clase. Estos selectores
+        modificarán a todos los elementos que tengan una clase determinada.
+    </p>
+
+    <p class="clasep">
+        Por ejemplo, estos últimos dos párrafos pertenecen a la clase
+        <code>clase=&quot;clasep&quot;</code>, y se pueden modificar por el sigiuente selector,
+        , anteponiendo <code>.</code> a la <code>clase</code> del elemento:
+    </p>
+
+    <pre><code>.clasep {<br>    color: red;<br>}</code></pre>
+
+    <h2>Flexbox</h2>
+
+    <p>
+        Flexbox es una forma muy sencilla y poderosa para distribuir elementos dentro de la 
+        pantalla. A continuación se darán unos ejemplos se cómo ocuparlo. ¡Revisa el código!
+    </p>
+
+    <h3>Disposición en filas, todos los bloques iguales</h3>
+
+    <div class="row">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+    </div>
+
+    <h3>Disposición en filas, bloques de diferente ancho</h3>
+
+    <div class="row">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col col2"></div>
+        <div class="col col2"></div>
+        <div class="col col3"></div>
+    </div>
+
+    <p>
+        Recuerda que hay muchas opciones para posicionar los elementos como quieras.
+        ¡Experimenta con todas las opciones hasta que sientas que lo dominas! 
+    </p>
+</body>
+</html>
